@@ -1,1 +1,2 @@
-Under-construction website for Sixteen Yards
+Under-construction website for Sixteen Yards.
+MIT License applies only to main directory and "assets_mit" subfolder. Copyright information for files within the "assets_cr" folder can be found directly within the folder.

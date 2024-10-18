@@ -1,0 +1,573 @@
+.barlow-thin {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.barlow-extralight {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.barlow-extrabold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.barlow-black {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.barlow-thin-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.barlow-extralight-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+.barlow-light-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.barlow-regular-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.barlow-medium-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.barlow-semibold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.barlow-bold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.barlow-extrabold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+.barlow-black-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.barlow-condensed-thin {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.barlow-condensed-extralight {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.barlow-condensed-medium {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.barlow-condensed-extrabold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.barlow-condensed-black {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.barlow-condensed-thin-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+.barlow-condensed-extralight-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+.barlow-condensed-light-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.barlow-condensed-regular-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.barlow-condensed-medium-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.barlow-condensed-semibold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.barlow-condensed-bold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.barlow-condensed-extrabold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+.barlow-condensed-black-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #334;
+	color: #fff;
+	font-family: 'Barlow', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+header {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	display: grid;
+	z-index: 1;
+	grid-template-columns: 25% 50% 25%;
+	background-color: #223;
+	min-height: 8vh;
+	padding: 1vh 2vw;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+header left {
+	text-align: left;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+header right {
+	text-align: right;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+header right-m {
+	font-size: 20px;
+	letter-spacing: 0.1vw;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: right;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+footer {
+	width: 100%;
+	display: grid;
+	z-index: 1;
+	grid-template-columns: 50% 50%;
+	background-color: #223;
+	min-height: 8vh;
+	padding: 1vh 2vw;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+footer left {
+	text-align: left;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 14px;
+	font-weight: 300;
+}
+footer right {
+	text-align: right;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+nav {
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 20px;
+	letter-spacing: 0.1vw;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+nav iteml {
+	padding: 0vh 3vw 0vh 0vw;
+}
+nav itemc {
+	padding: 0vh 1.5vw;
+}
+nav itemr {
+	padding: 0vh 0vw 0vh 3vw;
+}
+a {
+	color: #1b6;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+a:active {
+	text-decoration: none;
+	color: #fff;
+}
+p {
+	color: #eee;
+	line-height: 150%;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+ul {
+	color: #eee;
+	line-height: 150%;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+h1 {
+	font-size: 60px;
+	margin-top: 6px;
+	margin-bottom: 12px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 36px;
+	margin-top: 24px;
+	margin-bottom: 12px;
+	font-weight: 700;
+}
+h3 {
+	font-size: 24px;
+	margin-top: 24px;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+h4 {
+	width: fit-content;
+	padding: 6px 12px;
+	border-radius: 8px;
+	background: #1b6;
+	font-size: 18px;
+	margin-top: 12px;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+h5 {
+	width: fit-content;
+	padding: 6px 12px;
+	border-radius: 8px;
+	background: #556;
+	font-size: 18px;
+	margin-top: 12px;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+h4 a {
+	color: #223;
+}
+ul {
+	padding-left: 18px;
+}
+credit {
+	color: #ddd;
+	font-family: 'Barlow', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+}
+img {
+	width: 100%;
+	height: auto;
+	object-fit: scale-down;
+}
+iframe {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+}
+.main {
+	display: grid;
+	min-height: 84vh;
+}
+.nav-pc {}
+.nav-m {}
+.two-col {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.two-col-home {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	min-height: 30vh;
+}
+.twoxtwo {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto;
+}
+.div-padded {
+	width: 100%;
+	height: 100%;
+	display: table;
+	padding: 2vh 2vw;
+}
+.div-padded-alt {
+	width: 100%;
+	height: 100%;
+	display: table;
+	padding: 8vh 2vw;
+}
+vert {
+	display: table-cell;
+	vertical-align: middle;
+}
+vert-bottom {
+	display: table-cell;
+	vertical-align: bottom;
+}
+.img-bg {
+	background-color: #223;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.works-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+	grid-template-rows: repeat;
+}
+.works-grid a {
+	aspect-ratio: 1 / 1;
+}
+.works-grid div {
+	aspect-ratio: 1 / 1;
+}
+.works-grid .img-bg {
+	background-size: auto 100%;
+}
+.work-header {
+	display: block;
+	position: relative;
+	text-align: center;
+	aspect-ratio: 5 / 2;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-shadow: 0px 0px 12px #000, 0px 0px 36px #000;
+}
+.work-header p {
+	font-weight: 500;
+	text-shadow: 0px 0px 6px #000, 0px 0px 12px #000, 0px 0px 18px #000, 0px 0px 24px #000, 0px 0px 30px #000, 0px 0px 36px #000;
+}
+.work-header div {
+	width: 100%;
+	height: 100%;
+}
+.gallery-container {
+	display: block;
+	position: relative;
+	text-align: center;
+	background-color: #223;
+}
+.gallery-container img {
+	display: block;
+	height: 100%;
+}
+.gallery-caption {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+	max-height: 12vh;
+	background: linear-gradient(#0000, #0007);
+	padding: 2vh 1vw;
+	text-shadow: 0px 0px 6px #000, 0px 0px 12px #000, 0px 0px 18px #000;
+}
+
+#menu, #menu ul
+{
+	list-style: none;
+	padding: 0 0 26px 0;
+	margin: 0;
+}
+#menu li
+{
+	float: right;
+	margin-right: 1vw;
+	position: relative;
+}
+#menu ul
+{
+	position: absolute;
+	top: -2vh;
+	right: -5vw;
+	padding: 0;
+	display: none;
+	background-color: #223;
+}
+#menu ul li
+{
+	float: none;
+	margin: 2vh 5vw;
+	padding: 0;
+}
+#menu li:hover ul
+{
+	display: grid;
+}
+
+@media only screen and (min-width: 800px) {
+	.nav-m {
+		display: none;
+	}
+	header right-m {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 799px) {
+	body {
+		font-size: 18px;
+	}
+	header {
+		padding: 2vh 4vw;
+		grid-template-columns: 50% 0% 50%;
+		min-height: 10vh;
+	}
+	header right {
+		display: none;
+	}
+	footer {
+		padding: 2vh 4vw;
+		min-height: 10vh;
+	}
+	.main {
+		display: grid;
+		min-height: 80vh;
+	}
+	.two-col {
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto;
+	}
+	.two-col-home {
+		min-height: 24vh;
+	}
+	.two-col-home .img-bg {
+		background-size: 60vmax;
+	}
+	.twoxtwo div {
+		aspect-ratio: 1 / 1;
+	}
+	.works-grid {
+		grid-template-columns: 50% 50%;
+	}
+	.nav-pc {
+		display: none;
+	}
+	.div-padded {
+		padding: 2vh 4vw;
+	}
+	.div-padded-alt {
+		padding: 2vh 4vw;
+	}
+	.img-bg {
+		background-size: 140%;
+	}
+	.work-header {
+		aspect-ratio: 3 / 2;
+		background-size: 150%;
+		background-position: 50% 0%;
+	}
+	h1 {
+		font-size: 36px;
+		margin-bottom: 6px;
+	}
+	h2 {
+		font-size: 30px;
+		margin-bottom: 6px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		text-align: center;
+		width: auto;
+		font-size: 24px;
+	}
+	credit {
+		font-size: 14px;
+	}
+}
