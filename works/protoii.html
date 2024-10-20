@@ -48,7 +48,7 @@
 	<div class="div-padded" style="background-color: #0003;">
 		<vert>
 		<h1>Prototype II</h1>
-		<p>2020-11-19 - 2022-09-27<br/><i>Automation</i> · Client: N/A</p>
+		<p>2020-11-19 - 2022-09-27<br/><span translate="no"><i>Automation</i></span> · Client: N/A</p>
 		</vert>
 	</div>
 	</div>
@@ -58,8 +58,8 @@
 		<div class="div-padded">
 		<vert>
 		<h2>Overview</h2>
-		<p><i><a href="https://en.wikipedia.org/wiki/Automation_(video_game)" target="_blank">Automation</a></i> is a game wherein players design and manage their own cars and car companies. Its car design process consists of a base car body, essentially a blank slate onto which exterior fixtures like lights and grilles are placed. This body, although confined to a general layout (such as a sedan or wagon), may have areas of it manipulated by the player to change its shape and proportions, a feature referred to as "morphing" the body.</p>
-		<p>My first attempt at an <i>Automation</i> mod was a <a href="https://en.wikipedia.org/wiki/Le_Mans_Prototype" target="_blank">Le Mans Prototype</a>-style body that took around 3 weeks to complete. It was released onto the Steam Workshop in late 2019. At that time, low-slung race cars such as Le Mans Prototypes were beyond the limits of the game's car design tools, and having to model around the non-moddable chassis mesh resulted in the body's chunky proportions. After honing my skills with a few more mod bodies that were decidedly less experimental in nature, my original LMP body had aged like milk in comparison, so I finally decided on a total remake around a year later in late 2020.</p>
+		<p><span translate="no"><i><a href="https://en.wikipedia.org/wiki/Automation_(video_game)" target="_blank">Automation</a></i></span> is a game wherein players design and manage their own cars and car companies. Its car design process consists of a base car body, essentially a blank slate onto which exterior fixtures like lights and grilles are placed. This body, although confined to a general layout (such as a sedan or wagon), may have areas of it manipulated by the player to change its shape and proportions, a feature referred to as "morphing" the body.</p>
+		<p>My first attempt at an <span translate="no"><i>Automation</i></span> mod was a <a href="https://en.wikipedia.org/wiki/Le_Mans_Prototype" target="_blank">Le Mans Prototype</a>-style body that took around 3 weeks to complete. It was released onto the Steam Workshop in late 2019. At that time, low-slung race cars such as Le Mans Prototypes were beyond the limits of the game's car design tools, and having to model around the non-moddable chassis mesh resulted in the body's chunky proportions. After honing my skills with a few more mod bodies that were decidedly less experimental in nature, my original LMP body had aged like milk in comparison, so I finally decided on a total remake around a year later in late 2020.</p>
 		<p>Compared to the old version, the difference in proportions is as clear as day, and elements like the fender curves and protruding nose were removed from the base shape and reintroduced as morphs for greater flexibility.</p>
 		<h4><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2868520505" target="_blank">Steam Workshop link</a></h4>
 		</vert>
@@ -81,7 +81,7 @@
 		<div class="div-padded">
 		<vert>
 		<h2>Concept</h2>
-		<p>To meet the evolving standards of both <i>Automation</i> itself and its playerbase, I needed to plan ahead in terms of what morphs the new body should have. Generally speaking, vanilla-quality car bodies have the following morphs to maximize versatility:</p>
+		<p>To meet the evolving standards of both <span translate="no"><i>Automation</i></span> itself and its playerbase, I needed to plan ahead in terms of what morphs the new body should have. Generally speaking, vanilla-quality car bodies have the following morphs to maximize versatility:</p>
 		<ul>
 		<li>Front and rear <a href="https://en.wikipedia.org/wiki/Overhang_(vehicles)" target="_blank">overhangs</a>, to adjust longitudinal footprint, cargo volume, and/or aerodynamics</li>
 		<li>Front and rear fender flares, to fit wider wheels than would normally be allowed or just as a styling feature</li>
@@ -97,8 +97,8 @@
 		<div class="div-padded">
 		<vert>
 		<h2>Rigging</h2>
-		<p>From a technical perspective, a car body in <i>Automation</i> takes the form of a <a href="https://en.wikipedia.org/wiki/Skeletal_animation" target="_blank">skeletal mesh</a> that is rigged to a 'skeleton' made of virtual 'bones'. These bones allow parts of the mesh to move independently from each other. <a href="https://en.wikipedia.org/wiki/Morph_target_animation" target="_blank">Morph targets</a> are also used for morphs, though as the performance penalty they incur is not insignificant, they are usually restricted to morphs that are impossible with bones (such as uniformly scaling wheel arches).</p>
-		<p><i>Automation</i>'s application of skeletal meshes towards morphable car bodies is unique, not only because bones are used exclusively for translation and not rotation, but also because vertices are never <i>fully</i> mapped, or "weighted", to a morph like they would be with more conventional skeletal mesh use cases (e.g. a character's limbs). This partial weighting approach allows for multiple morphs to affect one area of the body, but results in a significant loss in weight precision in the context of Unreal Engine 4. Therefore, care must be taken to not make the car body mesh too polygon-dense, and not just for the typical reason of "fewer polygons = easier render".</p>
+		<p>From a technical perspective, a car body in <span translate="no"><i>Automation</i></span> takes the form of a <a href="https://en.wikipedia.org/wiki/Skeletal_animation" target="_blank">skeletal mesh</a> that is rigged to a 'skeleton' made of virtual 'bones'. These bones allow parts of the mesh to move independently from each other. <a href="https://en.wikipedia.org/wiki/Morph_target_animation" target="_blank">Morph targets</a> are also used for morphs, though as the performance penalty they incur is not insignificant, they are usually restricted to morphs that are impossible with bones (such as uniformly scaling wheel arches).</p>
+		<p><span translate="no"><i>Automation</i></span>'s application of skeletal meshes towards morphable car bodies is unique, not only because bones are used exclusively for translation and not rotation, but also because vertices are never <i>fully</i> mapped, or "weighted", to a morph like they would be with more conventional skeletal mesh use cases (e.g. a character's limbs). This partial weighting approach allows for multiple morphs to affect one area of the body, but results in a significant loss in weight precision in the context of Unreal Engine 4. Therefore, care must be taken to not make the car body mesh too polygon-dense, and not just for the typical reason of "fewer polygons = easier render".</p>
 		<p>The little test that I conducted as per the image was the result of me needing to know just what sort of morph precision threshold I was working with. In contrast to the subtle curves present on all but the boxiest of 80s cars, this body had plenty of flat surfaces that needed to remain perfectly straight when morphed, so avoiding kinks in the surface that could affect surface contours or fixtures placed on top was crucial. An excessive amount of overlapping morphs compounds the aforementioned loss in precision, so ultimately, a number of morph targets were used in areas like the cockpit and especially the nose.</p>
 		</vert>
 		</div>
@@ -112,15 +112,15 @@
 	<div class="two-col">
 		<div class="div-padded" style="text-align: center; background-color: #223;">
 		<vert>
-		<img src="../assets-cr/protoii04.png" alt="Prototype II Tub"/><br/><p>The central component of this passenger cell and nose assembly, shaded in light blue, is a single fixture (<i>Automation</i>)</p>
+		<img src="../assets-cr/protoii04.png" alt="Prototype II Tub"/><br/><p>The central component of this passenger cell and nose assembly, shaded in light blue, is a single fixture (<span translate="no"><i>Automation</i></span>)</p>
 		</vert>
 		</div>
 
 		<div class="div-padded">
 		<vert>
 		<h2>Fixtures</h2>
-		<p>Alongside the body family itself (comprised of the standard mid-engine variant, an alternate mid-engine variant with sleeker front fenders, a front-engine variant &agrave; la the <a href="https://en.wikipedia.org/wiki/Nissan_GT-R_LM_Nismo" target="_blank">Nissan GT-R LM NISMO,</a> and three different size variants for each at the time of release), a variety of fixtures were included with the mod to simplify the onerous task of making a sports prototype in <i>Automation</i>.</p>
-		<p>Among these fixtures is a single-piece carbon tub that leverages the skeletal mesh-based headlight fixture system. Said system was originally conceived by the <i>Automation</i> devs to prevent headlight internals (bulbs, reflector bowls, and so on) from becoming warped. With the tub, which is placed "on" the roof of the car, the same basic principle is used in order for the bottom to maintain its shape while the top edge conforms to the shape of the central body.</p>
+		<p>Alongside the body family itself (comprised of the standard mid-engine variant, an alternate mid-engine variant with sleeker front fenders, a front-engine variant &agrave; la the <a href="https://en.wikipedia.org/wiki/Nissan_GT-R_LM_Nismo" target="_blank">Nissan GT-R LM NISMO,</a> and three different size variants for each at the time of release), a variety of fixtures were included with the mod to simplify the onerous task of making a sports prototype in <span translate="no"><i>Automation</i></span>.</p>
+		<p>Among these fixtures is a single-piece carbon tub that leverages the skeletal mesh-based headlight fixture system. Said system was originally conceived by the <span translate="no"><i>Automation</i></span> devs to prevent headlight internals (bulbs, reflector bowls, and so on) from becoming warped. With the tub, which is placed "on" the roof of the car, the same basic principle is used in order for the bottom to maintain its shape while the top edge conforms to the shape of the central body.</p>
 		<p>The accompanying nose pieces, although designed to be placed on the front of the car instead of the roof, function in much the same way, with the innermost edge staying flat in order to align with the flat front of the tub fixture.</p>
 		<p>Additionally, the <a href="https://en.wikipedia.org/wiki/Glossary_of_motorsport_terms#sidepod" target="_blank">sidepods</a> seen on the 'hero' build are a pair of dedicated fixtures. They were given a rounded top edge that should maintain its shape; having this edge conform to the body's own rounded top edge would compound things, resulting in the curve becoming stretched inward. Making these sidepods static and unable to conform (as per the game's <a href="https://store.steampowered.com/news/app/293760/view/4366756485670606272" target="_blank">"3D fixture placement"</a> mechanic) would have been far simpler than a skeletal mesh approach, but I wanted the ability for them to be cut away by other fixtures (useful for advanced body shaping). To complicate things, vertices on skeletal fixtures need to be either fully weighted to a bone or not weighted at all, making my original weight gradient idea a no-go.</p>
 		<p>My solution was to assign a bone to each segment of the rounded top edge, preserving its profile while allowing the sidepod to conform along its length. Lots of trial and error was involved, but I'd say it was all worth it in the end.</p>
@@ -130,21 +130,21 @@
 	<div class="div-padded" style="text-align: center">
 	<vert>
 	<h2>Gallery</h2>
-	<credit>Top photo taken in <i>Automation</i></credit>
+	<credit>Top photo taken in <span translate="no"><i>Automation</i></span></credit>
 	</vert>
 	</div>
 	<div class="two-col">
 		<div class="gallery-container">
 			<img src="../assets-cr/protoii05.jpg" alt="Prototype II Pit Stop"/>
 			<div class="gallery-caption">
-			Pit stop side photo of 'hero' build (<i>Automation</i>)
+			Pit stop side photo of 'hero' build (<span translate="no"><i>Automation</i></span>)
 			</div>
 		</div>
 
 		<div class="gallery-container">
 			<img src="../assets-cr/protoii06.jpg" alt="Prototype II Hillclimb Build"/>
 			<div class="gallery-caption">
-			Hillclimb build; human for scale (<i>Automation</i>)
+			Hillclimb build; human for scale (<span translate="no"><i>Automation</i></span>)
 			</div>
 		</div>
 	</div>
@@ -159,7 +159,7 @@
 		<div class="gallery-container">
 			<img src="../assets-cr/protoii08.jpg" alt="Prototype II Front-Engined Build"/>
 			<div class="gallery-caption">
-			Front-engined time attack build making twice its weight in downforce (<i>BeamNG.drive</i>)
+			Front-engined time attack build making twice its weight in downforce (<span translate="no"><i>BeamNG.drive</i></span>)
 			</div>
 		</div>
 	</div>
@@ -167,7 +167,7 @@
 
 <footer>
 <left>
-Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a><br/>Logo / design © 2024 Sixteen Yards
+Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a><br/>Logo / design © 2024 <span translate="no">Sixteen Yards</span>
 </left>
 <nav style="text-align: right;">
 	<div class="nav-pc">
