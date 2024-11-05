@@ -372,6 +372,10 @@ iframe {
 	grid-template-columns: 50% 50%;
 	min-height: 30vh;
 }
+.two-col-img {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
 .twoxtwo {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -388,6 +392,12 @@ iframe {
 	height: 100%;
 	display: table;
 	padding: 8vh 2vw;
+}
+.div-padded-imggrid {
+	width: 100%;
+	height: 100%;
+	display: table;
+	padding: 2vh 1vw 0vh 1vw;
 }
 vert {
 	display: table-cell;
