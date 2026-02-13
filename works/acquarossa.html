@@ -3,6 +3,7 @@
 
 <head>
 <title>Sixteen Yards - Scintilla Acquarossa</title>
+<meta charset="utf-8">
 <link rel="icon" type="image/png" href="../assets-cr/logo-icon.png"/>
 <link rel="stylesheet" href="../styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,9 +102,9 @@
 		<h2>Physics and Parts</h2>
 		<p>In spite of <span translate="no"><i>BeamNG</i></span>'s world-class softbody physics, its aerodynamic model is a bit basic where motorsports-level aero is concerned, though it remains perfectly adequate for most other scenarios. To elaborate, as of v0.33, <span translate="no"><i>BeamNG</i></span> does not yet natively support ground effects (or slipstreaming, but that's not relevant here). The approach I thus ended up taking—using the regular aero model for the diffuser in addition to the other aero parts—does make the diffuser and undertray <i>too</i> effective in certain scenarios, but the only alternative was writing custom Lua code based on what Camshaft Software has done for <span translate="no"><i>Automation</i></span> exports, which I lacked the know-how to make from scratch.</p>
 		<p>The rest of the aero parts perform as they would on any other car (the sheer amount of downforce they produce notwithstanding), though I did add downforce-producing variants of the racing hood and performance front lip to augment the splitter and canards.</p>
-		<p>Other parts added as quality-of-life measures include a stronger rear tailgate that doesn't warp at speed, tweaked exhausts that are angled slightly upwards to account for the diffuser, blanking plates for the front bumper reflectors, and a custom accessory mode screen for the digital racing dashboard that features the Acquarossa logo. The "Stradale" ("Street") configuration of the Acquarossa is also equipped with a wing-mounted <a href="https://en.wikipedia.org/wiki/Automotive_lighting#Center_high_mount_stop_lamp_(CHMSL)" target="_blank">CHMSL</a> and reflectors on the lower wing endplates to make up for the reflector-less modified rear bumper.</p>
+		<p>Other parts added as quality-of-life measures include a stronger rear tailgate that doesn't warp at speed, tweaked exhausts that are angled slightly upwards to account for the diffuser, blanking plates for the front bumper reflectors, and a custom accessory mode screen for the digital racing dashboard that features the Acquarossa logo. The <b>Stradale</b> ("Street") configuration of the Acquarossa is also equipped with a wing-mounted <a href="https://en.wikipedia.org/wiki/Automotive_lighting#Center_high_mount_stop_lamp_(CHMSL)" target="_blank">CHMSL</a> and reflectors on the lower wing endplates to make up for the reflector-less modified rear bumper.</p>
 		<h3>Active Wing</h3>
-		<p>Although the Acquarossa does use Lua code, it's only to control the active wing. As a result, it's much simpler in nature and only consists of a few logical expressions that read the vehicle's speed and some inputs.</p>
+		<p>Although the Acquarossa does use <a href="https://en.wikipedia.org/wiki/Lua" target="_blank">Lua</a> code, it's only to control the active wing. As a result, it's much simpler in nature and only consists of a few logical expressions that read the vehicle's speed and some inputs.</p>
 		<p>The wing is normally raised, but lowers to produce less rear downforce when the driver applies near-full throttle above a speed threshold of 150 km/h (93 mph), assumes an intermediate position if the driver applies less throttle or coasts above the speed threshold, and raises completely if the driver steers or applies the brakes above the speed threshold.</p>
 		</vert>
 		</div>
@@ -117,7 +118,7 @@
 	<div class="div-padded" style="text-align: center">
 	<vert>
 	<h2>Gallery</h2>
-	<credit>Top photo taken in <span translate="no"><i>BeamNG.drive</i></span></credit>
+	<fn>Top photo taken in <span translate="no"><i>BeamNG.drive</i></span></fn>
 	</vert>
 	</div>
 	<div class="two-col">

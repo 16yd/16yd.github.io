@@ -3,6 +3,7 @@
 
 <head>
 <title>Sixteen Yards - Prototype II</title>
+<meta charset="utf-8">
 <link rel="icon" type="image/png" href="../assets-cr/logo-icon.png"/>
 <link rel="stylesheet" href="../styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,6 +124,7 @@
 		<p>Alongside the body family itself (comprised of the standard mid-engine variant, an alternate mid-engine variant with sleeker front fenders, a front-engine variant &agrave; la the <a href="https://en.wikipedia.org/wiki/Nissan_GT-R_LM_Nismo" target="_blank">Nissan GT-R LM NISMO,</a> and three different size variants for each at the time of release), a variety of fixtures were included with the mod to simplify the onerous task of making a sports prototype in <span translate="no"><i>Automation</i></span>.</p>
 		<p>Among these fixtures is a single-piece carbon tub that leverages the skeletal mesh-based headlight fixture system. Said system was originally conceived by the <span translate="no"><i>Automation</i></span> devs to prevent headlight internals (bulbs, reflector bowls, and so on) from becoming warped. With the tub, which is placed "on" the roof of the car, the same basic principle is used in order for the bottom to maintain its shape while the top edge conforms to the shape of the central body.</p>
 		<p>The accompanying nose pieces, although designed to be placed on the front of the car instead of the roof, function in much the same way, with the innermost edge staying flat in order to align with the flat front of the tub fixture.</p>
+		<h3>Sidepods</h3>
 		<p>Additionally, the <a href="https://en.wikipedia.org/wiki/Glossary_of_motorsport_terms#sidepod" target="_blank">sidepods</a> seen on the 'hero' build are a pair of dedicated fixtures. They were given a rounded top edge that should maintain its shape; having this edge conform to the body's own rounded top edge would compound things, resulting in the curve becoming stretched inward. Making these sidepods static and unable to conform (as per the game's <a href="https://store.steampowered.com/news/app/293760/view/4366756485670606272" target="_blank">"3D fixture placement"</a> mechanic) would have been far simpler than a skeletal mesh approach, but I wanted the ability for them to be cut away by other fixtures (useful for advanced body shaping). To complicate things, vertices on skeletal fixtures need to be either fully weighted to a bone or not weighted at all, making my original weight gradient idea a no-go.</p>
 		<p>My solution was to assign a bone to each segment of the rounded top edge, preserving its profile while allowing the sidepod to conform along its length. Lots of trial and error was involved, but I'd say it was all worth it in the end.</p>
 		</vert>
@@ -131,7 +133,7 @@
 	<div class="div-padded" style="text-align: center">
 	<vert>
 	<h2>Gallery</h2>
-	<credit>Top photo taken in <span translate="no"><i>Automation</i></span></credit>
+	<fn>Top photo taken in <span translate="no"><i>Automation</i></span></fn>
 	</vert>
 	</div>
 	<div class="two-col">
@@ -153,7 +155,7 @@
 		<div class="gallery-container">
 			<img src="../assets-cr/protoii09.jpg" alt="Prototype II Builds Le Mans 2023"/>
 			<div class="gallery-caption">
-			Assortment of LMP1 builds by HurtsJustALittleBit (<span translate="no"><i>Automation</i></span>)<br><credit>Clockwise from bottom right: Bergwerks HE-R Evo '18, Bergwerks HE-R Hybrid '17, DM D4-H '16, Yutaka HP06 '20, Yutaka HP06 Touring '22, Yutaka FR-LM '15</credit>
+			Assortment of LMP1 builds by HurtsJustALittleBit (<span translate="no"><i>Automation</i></span>)<br><fn>Clockwise from bottom right: Bergwerks HE-R Evo '18, Bergwerks HE-R Hybrid '17, DM D4-H '16, Yutaka HP06 '20, Yutaka HP06 Touring '22, Yutaka FR-LM '15</fn>
 			</div>
 		</div>
 
